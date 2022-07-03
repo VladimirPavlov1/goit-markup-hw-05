@@ -741,6 +741,7 @@ p{
 }
 .work-list .item:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 .work-list .item:nth-child(3n){
     margin-right: 0;
@@ -759,7 +760,8 @@ p{
 .work-list-thumb{
     position: relative;
 }
-.work-list-thumb::before{
+
+.work-list .item:hover .work-list-thumb::before{
     position: absolute;
     content:'';
 
@@ -767,14 +769,14 @@ p{
     height: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
+    opacity: 1;
 
 }
-.work-list-thumb:hover::before{
+
+
+.work-list .item:hover:hover .work-thumb-text{
     opacity: 1;
-}
-.work-list-thumb:hover .work-thumb-text{
-    opacity: 1;
+    
 }
 .work-list-thumb .work-thumb-text{
     position: absolute;
