@@ -789,7 +789,8 @@ p{
     
     
 }
-.work-list .item:hover{
+.work-list .item:hover,
+.work-list .item:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
@@ -827,7 +828,8 @@ p{
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.work-list .item:hover .work-list-thumb::before{
+.work-list .item:hover .work-list-thumb::before,
+.work-list .item:focus .work-list-thumb::before{
      transform: translateY(0%);
 
 }
