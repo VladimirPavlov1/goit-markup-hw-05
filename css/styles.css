@@ -56,7 +56,7 @@ img{
    
     background-color:rgba(0, 0, 0, 0.2);
     transition-property: opacity, visibility;
-    transition-duration: 250ms;
+    transition-duration: 1000ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .backdrop.is-hidden{
